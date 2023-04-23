@@ -8,8 +8,7 @@
 
 <style>
 :root {
-  --primary-font: "SF Pro Display", sans-serif;
-  --secondary-font: "Inter", sans-serif;
+  --secondary-font: 'Inter', sans-serif;
   --grey-primary: #262628;
   --grey-secondary: #424242;
   --charcoal-color: #e6e6e6;

@@ -14,15 +14,13 @@
 <style lang="scss" scoped></style>
 
 <script>
-import { mapGetters } from "vuex";
-
 export default {
-  name: "Button",
+  name: 'Button',
   props: {
     label: String,
     theme: {
       type: String,
-      default: "default",
+      default: 'default',
     },
     disabled: {
       type: Boolean,
@@ -34,33 +32,33 @@ export default {
     return {
       themes: {
         default: {
-          backgroundColor: "white",
-          color: "#262628",
+          backgroundColor: 'white',
+          color: '#262628',
         },
         plainRed: {
-          backgroundColor: "#fc4848",
-          color: "white",
+          backgroundColor: '#fc4848',
+          color: 'white',
         },
         disabled: {
-          backgroundColor: "#fafafa",
-          color: "#c6c6c8",
-          border: "none",
-          pointerEvents: "none",
+          backgroundColor: '#fafafa',
+          color: '#c6c6c8',
+          border: 'none',
+          pointerEvents: 'none',
         },
       },
     };
   },
   methods: {
     onClick() {
-      this.$emit("onClick");
+      this.$emit('onClick');
     },
   },
   computed: {
     styles() {
-      if (this.disabled) return this.themes["disabled"];
+      if (this.disabled) return this.themes['disabled'];
       return {
         ...this.themes[this.theme],
-        pointerEvents: this.loading ? "none" : "",
+        pointerEvents: this.loading ? 'none' : '',
       };
     },
   },

@@ -1,0 +1,22 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+  
+    .ap-scroll-bar::-webkit-scrollbar {
+      @apply ap-w-2;
+    }
+  
+    .ap-scroll-bar::-webkit-scrollbar-track-piece {
+      @apply ap-bg-light-grey; 
+      @apply ap-rounded-full; 
+    }
+  
+    .ap-scroll-bar::-webkit-scrollbar-thumb {
+      @apply ap-bg-grey; 
+      @apply ap-rounded-full;
+    }
+  }

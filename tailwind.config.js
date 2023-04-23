@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  prefix: 'sb-',
+  prefix: 'sk-',
   theme: {
     colors: {
       'primary-red': '#dc4343',
