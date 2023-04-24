@@ -1,30 +1,23 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
+    node: true
   },
-  extends: [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended",
-    "plugin:prettier/recommended",
-  ],
+  extends: ["plugin:vue/vue3-essential", "eslint:recommended", "plugin:prettier/recommended", "plugin:storybook/recommended"],
   parserOptions: {
     parser: "@babel/eslint-parser",
     requireConfigFile: false,
     ecmaVersion: 2020,
     sourceType: "module",
-    project: "./jsconfig.json",
+    project: "./jsconfig.json"
   },
   rules: {
     "linebreak-style": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        endOfLine: "auto",
-        singleQuote: true,
-        semi: true,
-      },
-    ],
-    "vue/multi-word-component-names": "off",
-  },
+    "prettier/prettier": ["error", {
+      endOfLine: "auto",
+      singleQuote: true,
+      semi: true
+    }],
+    "vue/multi-word-component-names": "off"
+  }
 };
