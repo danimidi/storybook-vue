@@ -23,7 +23,7 @@ export default {
     };
   },
   methods: {
-    onClick() {
+    onClickButton() {
       this.$emit('onClick');
     },
   },
@@ -38,7 +38,7 @@ export default {
 
 <template>
   <button
-    @click="onClick"
+    @click="onClickButton"
     class="sk-h-full sk-w-full sk-text-sm sk-font-semibold sk-flex sk-items-center sk-justify-center sk-border sk-border-charcoal sk-shadow-default sk-rounded-lg"
     :class="styles"
     :disabled="disabled"
