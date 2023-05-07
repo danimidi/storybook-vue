@@ -8,7 +8,8 @@
     "lint": "vue-cli-service lint",
     "start": "vue-cli-service serve",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build-bundle": "vue-cli-service build --target lib --name story-book-proyect ./src/index.js"
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.17",
@@ -61,5 +62,13 @@
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "main": "./dist/story-book-proyect.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
   ]
 }
