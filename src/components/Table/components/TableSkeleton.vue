@@ -1,5 +1,5 @@
 <script>
-import Skeleton from './Skeleton';
+import Skeleton from './Skeleton.vue';
 
 export default {
   name: 'TableSkeleton',
