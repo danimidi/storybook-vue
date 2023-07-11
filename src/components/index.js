@@ -4,3 +4,5 @@ export { default as Input } from './Input';
 export * from './Input';
 export { default as Table } from './Table';
 export * from './Table';
+export { default as DatePicker } from './DatePicker';
+export * from './DatePicker';

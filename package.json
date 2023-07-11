@@ -50,7 +50,8 @@
     "storybook-css-modules-preset": "^1.1.1",
     "tailwindcss": "^3",
     "v-calendar": "^3.0.2",
-    "vue-cli-plugin-tailwind": "~3.0.0"
+    "vue-cli-plugin-tailwind": "~3.0.0",
+    "vuejs3-datepicker": "^1.0.19"
   },
   "browserslist": [
     "> 1%",
