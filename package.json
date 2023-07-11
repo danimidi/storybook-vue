@@ -4,12 +4,11 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "rollup -c",
     "lint": "vue-cli-service lint",
     "start": "vue-cli-service serve",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "build-bundle": "vue-cli-service build --target lib --name story-book-proyect ./src/index.js"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.7",
@@ -22,6 +21,8 @@
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "@heroicons/vue": "^2.0.17",
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
     "@storybook/addon-docs": "^7.0.6",
     "@storybook/addon-essentials": "^7.0.6",
     "@storybook/addon-interactions": "^7.0.6",
@@ -46,6 +47,11 @@
     "moment": "^2.29.4",
     "postcss": "^8",
     "prettier": "^2.4.1",
+    "rollup": "^3.26.2",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-vue": "^6.0.0",
     "storybook": "^7.0.6",
     "storybook-css-modules-preset": "^1.1.1",
     "tailwindcss": "^3",
@@ -53,17 +59,17 @@
     "vue-cli-plugin-tailwind": "~3.0.0",
     "vuejs3-datepicker": "^1.0.19"
   },
+  "peerDependencies": {
+    "vue": "^3.2.13"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
   ],
-  "main": "./dist/story-book-proyect.common.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "files": [
-    "dist/*",
-    "src/*",
-    "public/*",
-    "*.json",
-    "*.js"
+    "dist/*"
   ]
 }
