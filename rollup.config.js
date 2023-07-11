@@ -4,6 +4,7 @@ import postcss from 'rollup-plugin-postcss';
 import copy from 'rollup-plugin-copy';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import terser from '@rollup/plugin-terser';
 
 const packageJson = require('./package.json');
 
@@ -52,6 +53,7 @@ export default [
       }),
       resolve(),
       commonjs(),
+      terser(),
     ],
   },
 ];
