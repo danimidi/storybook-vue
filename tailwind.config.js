@@ -24,6 +24,12 @@ module.exports = {
       white: '#FFFFFF',
       transparent: 'transparent',
     },
+    fontFamily: {
+      normal: ['"Inter",sans-serif'],
+      medium: ['"Inter",sans-serif'],
+      semibold: ['"Inter",sans-serif'],
+      bold: ['"Inter",sans-serif'],
+    },
     extend: {
       boxShadow: {
         light: '0 3px 4px rgba(103, 103, 103, 0.1)',

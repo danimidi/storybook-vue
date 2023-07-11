@@ -33,14 +33,13 @@ export const Secondary = {
 };
 
 export const WithIcon = {
-  render: (args, { argTypes }) => ({
+  render: (args) => ({
     components: { Button, BIconDownload },
-    props: Object.keys(argTypes),
-    template: `
-    <Button v-bind="$props">
-      <BIconDownload class="sk-flex sk-h-6 sk-w-6"></BIconDownload>
-    </Button>
-  `,
+    setup() {
+      return { args };
+    },
+    template:
+      '<Button v-bind="args"><BIconDownload class="sk-w-full sk-h-full"></BIconDownload></Button>',
   }),
   args: {
     label: 'Download',

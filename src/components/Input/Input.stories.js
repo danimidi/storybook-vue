@@ -1,9 +1,5 @@
 import Input from './Input.vue';
 
-// import { BIconPlus } from 'bootstrap-icons-vue';
-// import { PencilSquareIcon } from '@heroicons/vue/24/solid';
-// console.log(BIconPlus, 'iconB');
-// console.log(PencilSquareIcon, 'iconH');
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 export default {
   title: 'AliDesignSystem/Input',
